@@ -1,0 +1,234 @@
+{
+  "uuid": "13587b1a-1534-43db-8628-15bd9bdb5c91",
+  "lastMigration": 33,
+  "name": "TestWorker",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "259b7392-fbe1-430e-b6cf-c41b4a0c32c5",
+      "type": "http",
+      "documentation": "user/0",
+      "method": "get",
+      "endpoint": "user/0.json",
+      "responses": [
+        {
+          "uuid": "7eb1b771-f84f-48a8-b0e3-85cf2487ebda",
+          "body": "{\n  \"currentPage\": 0,\n  \"totalPages\": 10,\n  \"feed\": [\n    {\n      \"name\": \"Apple\",\n      \"full_name\": \"Malus domestica\",\n      \"calories\": \"95 calories\"\n    },\n    {\n      \"name\": \"Banana\",\n      \"full_name\": \"Musa acuminata\",\n      \"calories\": \"105 calories\"\n    },\n    {\n      \"name\": \"Orange\",\n      \"full_name\": \"Citrus × sinensis\",\n      \"calories\": \"62 calories\"\n    },\n    {\n      \"name\": \"Grapes\",\n      \"full_name\": \"Vitis vinifera\",\n      \"calories\": \"69 calories\"\n    },\n    {\n      \"name\": \"Strawberry\",\n      \"full_name\": \"Fragaria × ananassa\",\n      \"calories\": \"4 calories\"\n    },\n    {\n      \"name\": \"Watermelon\",\n      \"full_name\": \"Citrullus lanatus\",\n      \"calories\": \"30 calories\"\n    },\n    {\n      \"name\": \"Pineapple\",\n      \"full_name\": \"Ananas comosus\",\n      \"calories\": \"50 calories\"\n    },\n    {\n      \"name\": \"Mango\",\n      \"full_name\": \"Mangifera indica\",\n      \"calories\": \"60 calories\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "28e54481-8884-49a9-8b8e-b085132d57b3",
+      "type": "http",
+      "documentation": "user/1",
+      "method": "get",
+      "endpoint": "user/1.json",
+      "responses": [
+        {
+          "uuid": "f9ed06cd-74e9-4b91-83d2-33db34d11bbd",
+          "body": "{\n  \"currentPage\": 1,\n  \"totalPages\": 10,\n  \"feed\": [\n    {\n      \"name\": \"Kiwi\",\n      \"full_name\": \"Actinidia deliciosa\",\n      \"calories\": \"61 calories\"\n    },\n    {\n      \"name\": \"Pear\",\n      \"full_name\": \"Pyrus communis\",\n      \"calories\": \"102 calories\"\n    },\n    {\n      \"name\": \"Peach\",\n      \"full_name\": \"Prunus persica\",\n      \"calories\": \"59 calories\"\n    },\n    {\n      \"name\": \"Plum\",\n      \"full_name\": \"Prunus domestica\",\n      \"calories\": \"46 calories\"\n    },\n    {\n      \"name\": \"Cherry\",\n      \"full_name\": \"Prunus avium\",\n      \"calories\": \"50 calories\"\n    },\n    {\n      \"name\": \"Blueberry\",\n      \"full_name\": \"Vaccinium corymbosum\",\n      \"calories\": \"57 calories\"\n    },\n    {\n      \"name\": \"Raspberry\",\n      \"full_name\": \"Rubus idaeus\",\n      \"calories\": \"53 calories\"\n    },\n    {\n      \"name\": \"Lemon\",\n      \"full_name\": \"Citrus limon\",\n      \"calories\": \"29 calories\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "3a046c24-3d64-454e-97d9-7fe502eb2580",
+      "type": "http",
+      "documentation": "user/2",
+      "method": "get",
+      "endpoint": "user/2.json",
+      "responses": [
+        {
+          "uuid": "075d3d28-9078-4f6a-9be7-0b5097c28e20",
+          "body": "{\n    \"currentPage\": 2,\n    \"totalPages\": 10,\n    \"feed\": [\n        {\n            \"name\": \"Lime\",\n            \"full_name\": \"Citrus aurantiifolia\",\n            \"calories\": \"30 calories\"\n        },\n        {\n            \"name\": \"Papaya\",\n            \"full_name\": \"Carica papaya\",\n            \"calories\": \"59 calories\"\n        },\n        {\n            \"name\": \"Avocado\",\n            \"full_name\": \"Persea americana\",\n            \"calories\": \"160 calories\"\n        },\n        {\n            \"name\": \"Pomegranate\",\n            \"full_name\": \"Punica granatum\",\n            \"calories\": \"83 calories\"\n        },\n        {\n            \"name\": \"Cranberry\",\n            \"full_name\": \"Vaccinium macrocarpon\",\n            \"calories\": \"46 calories\"\n        },\n        {\n            \"name\": \"Apricot\",\n            \"full_name\": \"Prunus armeniaca\",\n            \"calories\": \"15 calories\"\n        },\n        {\n            \"name\": \"Fig\",\n            \"full_name\": \"Ficus carica\",\n            \"calories\": \"74 calories\"\n        },\n        {\n            \"name\": \"Guava\",\n            \"full_name\": \"Psidium guajava\",\n            \"calories\": \"68 calories\"\n        }\n    ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "5c711852-3ee2-4362-b97f-8413531fef4d",
+      "type": "http",
+      "documentation": "user/3",
+      "method": "get",
+      "endpoint": "user/3.json",
+      "responses": [
+        {
+          "uuid": "e8ff76c4-4bd4-4394-baea-9014e82736a9",
+          "body": "{\n  \"currentPage\": 3,\n  \"totalPages\": 10,\n  \"feed\": [\n    {\n      \"name\": \"Blackberry\",\n      \"full_name\": \"Rubus fruticosus\",\n      \"calories\": \"43 calories\"\n    },\n    {\n      \"name\": \"Passion Fruit\",\n      \"full_name\": \"Passiflora edulis\",\n      \"calories\": \"17 calories\"\n    },\n    {\n      \"name\": \"Dragon Fruit\",\n      \"full_name\": \"Hylocereus spp.\",\n      \"calories\": \"60 calories\"\n    },\n    {\n      \"name\": \"Cantaloupe\",\n      \"full_name\": \"Cucumis melo\",\n      \"calories\": \"34 calories\"\n    },\n    {\n      \"name\": \"Persimmon\",\n      \"full_name\": \"Diospyros kaki\",\n      \"calories\": \"81 calories\"\n    },\n    {\n      \"name\": \"Elderberry\",\n      \"full_name\": \"Sambucus spp.\",\n      \"calories\": \"73 calories\"\n    },\n    {\n      \"name\": \"Lychee\",\n      \"full_name\": \"Litchi chinensis\",\n      \"calories\": \"66 calories\"\n    },\n    {\n      \"name\": \"Starfruit\",\n      \"full_name\": \"Averrhoa carambola\",\n      \"calories\": \"31 calories\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "0ce694c2-e46b-49ef-9637-6d87ea5ef5ac",
+      "type": "http",
+      "documentation": "user/4",
+      "method": "get",
+      "endpoint": "user/4.json",
+      "responses": [
+        {
+          "uuid": "daab0209-a3f1-48ba-ab40-4504eb062f99",
+          "body": "{\n  \"currentPage\": 4,\n  \"totalPages\": 10,\n  \"feed\": [\n    {\n      \"name\": \"Coconut\",\n      \"full_name\": \"Cocos nucifera\",\n      \"calories\": \"354 calories\"\n    },\n    {\n      \"name\": \"Date\",\n      \"full_name\": \"Phoenix dactylifera\",\n      \"calories\": \"282 calories\"\n    },\n    {\n      \"name\": \"Goji Berry\",\n      \"full_name\": \"Lycium barbarum\",\n      \"calories\": \"349 calories\"\n    },\n    {\n      \"name\": \"Acai Berry\",\n      \"full_name\": \"Euterpe oleracea\",\n      \"calories\": \"70 calories\"\n    },\n    {\n      \"name\": \"Jackfruit\",\n      \"full_name\": \"Artocarpus heterophyllus\",\n      \"calories\": \"95 calories\"\n    },\n    {\n      \"name\": \"Durian\",\n      \"full_name\": \"Durio zibethinus\",\n      \"calories\": \"147 calories\"\n    },\n    {\n      \"name\": \"Mulberry\",\n      \"full_name\": \"Morus spp.\",\n      \"calories\": \"43 calories\"\n    },\n    {\n      \"name\": \"Gooseberry\",\n      \"full_name\": \"Ribes uva-crispa\",\n      \"calories\": \"44 calories\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "259b7392-fbe1-430e-b6cf-c41b4a0c32c5"
+    },
+    {
+      "type": "route",
+      "uuid": "28e54481-8884-49a9-8b8e-b085132d57b3"
+    },
+    {
+      "type": "route",
+      "uuid": "3a046c24-3d64-454e-97d9-7fe502eb2580"
+    },
+    {
+      "type": "route",
+      "uuid": "5c711852-3ee2-4362-b97f-8413531fef4d"
+    },
+    {
+      "type": "route",
+      "uuid": "0ce694c2-e46b-49ef-9637-6d87ea5ef5ac"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
