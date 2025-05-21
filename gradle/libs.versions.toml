@@ -4,6 +4,7 @@ hiltAndroid = "2.56.2"
 kotlin = "2.1.21"
 hilt = "2.56.2"
 hiltWork = "1.2.0"
+hiltNavigationCompose = "1.2.0"
 ksp = "2.1.21-2.0.1"
 coreKtx = "1.16.0"
 composeMultiplatform = "1.8.0"
@@ -34,6 +35,7 @@ hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "hiltWork" }
 hilt-work-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltWork" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroid" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

@@ -42,11 +42,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarColors
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -54,30 +50,22 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.viewmodel.compose.viewModel
+import com.minhky.testworker.MainConsumerViewModel
 import com.minhky.testworker.R
-import com.minhky.testworker.di.AppContainer
 import com.minhky.testworker.domain.model.Fruittie
-import com.minhky.testworker.viewmodel.MainViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ListScreen(
-    appContainer: AppContainer
+    viewModel: MainConsumerViewModel = hiltViewModel()
 ) {
     // Instantiate a ViewModel with a dependency on the AppContainer.
     // To make ViewModel compatible with KMP, the ViewModel factory must
     // create an instance without referencing the Android Application.
     // Here we put the KMP-compatible AppContainer into the extras
     // so it can be passed to the ViewModel factory.
-    val extras = remember(appContainer) {
-        MainViewModel.newCreationExtras(appContainer)
-    }
-    val viewModel: MainViewModel = viewModel(
-        factory = MainViewModel.Factory,
-        extras = extras,
-    )
 
     val uiState by viewModel.homeUiState.collectAsStateWithLifecycle()
 

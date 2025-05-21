@@ -19,7 +19,6 @@ class App : Application(), Configuration.Provider {
 
     override fun onCreate() {
         super.onCreate()
-        println(API_URL)
     }
 
 }

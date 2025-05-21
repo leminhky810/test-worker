@@ -1,6 +1,6 @@
 package com.minhky.testworker.di
 
-import android.app.Application
+import android.content.Context
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,7 +15,7 @@ object DatabaseModule {
     @Provides
     @Singleton
     fun providesAppDatabase(
-        @ApplicationContext app: Application
+        @ApplicationContext app: Context
     ) = AppDatabaseFactory(app)
 
 }

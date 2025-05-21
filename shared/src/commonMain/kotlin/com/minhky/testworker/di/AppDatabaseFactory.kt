@@ -16,7 +16,10 @@
 package com.minhky.testworker.di
 
 import com.minhky.testworker.database.AppDatabase
+import com.minhky.testworker.database.dao.FruitteDao
 
 expect class AppDatabaseFactory {
-    val appDatabase: AppDatabase
+    fun createAppDatabase(): AppDatabase
 }
+
+expect val AppDatabaseFactory.fruitteeDao: FruitteDao

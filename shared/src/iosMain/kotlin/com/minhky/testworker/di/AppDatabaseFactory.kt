@@ -11,9 +11,10 @@ import platform.Foundation.NSURL
 import platform.Foundation.NSUserDomainMask
 import com.minhky.testworker.database.DB_FILE_NAME
 import androidx.sqlite.driver.bundled.BundledSQLiteDriver
+import com.minhky.testworker.database.dao.FruitteDao
 
 actual class AppDatabaseFactory() {
-    actual val appDatabase: AppDatabase =
+    actual fun createAppDatabase(): AppDatabase =
         Room.databaseBuilder<AppDatabase>(
                 name = "${fileDirectory()}/$DB_FILE_NAME",
             ).setDriver(BundledSQLiteDriver())
@@ -33,3 +34,6 @@ actual class AppDatabaseFactory() {
         return requireNotNull(documentDirectory).path!!
     }
 }
+
+actual val AppDatabaseFactory.fruitteeDao: FruitteDao
+    get() = createAppDatabase().fruitteeDao()

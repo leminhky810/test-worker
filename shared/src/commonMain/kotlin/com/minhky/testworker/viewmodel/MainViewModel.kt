@@ -31,7 +31,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 
-class MainViewModel(
+open class MainViewModel(
     observerFruittesUseCase: ObserverFruittesUseCase,
 ) : ViewModel() {
     val homeUiState: StateFlow<HomeUiState> =
